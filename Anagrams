@@ -1,0 +1,56 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+
+{
+
+    int t;
+
+    cin>>t;
+
+    while(t--)
+
+    {
+
+        string a,b;
+
+        int freq[26]={0};
+
+        int count=0;
+
+        cin>>a>>b;
+
+        for(int i=0;i<a.length();i++)
+
+        {
+
+            for(int j=0;j<b.length();j++)
+
+            {
+
+                if(a[i]==b[j])
+
+                {
+
+                    count++;
+
+                    b[j]='0';
+
+                    break;
+
+                }
+
+            }
+
+        }
+
+        int temp=a.length()+b.length()-2*count;
+
+        cout<<temp<<endl;
+
+    }
+
+}
+
