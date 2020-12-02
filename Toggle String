@@ -21,7 +21,7 @@ while(i<l){
 
     i++;
 
-}a
+}
 
 cout<<s<<endl;
 
