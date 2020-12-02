@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	long int tc;
+	cin >> tc;
+	int c = 0;
+	int n;
+	int top = 7,bottom = 0;
+	for(int t = 0 ; t < tc ; t++)
+	{
+		cin >> n;
+		if((top-n)>=(n-bottom))
+		{
+			cout << "A"<< endl;
+			bottom = n;
+		}
+		else{
+			cout << "B" <<endl;
+			top = n;
+		}
+	}
+	
+}
