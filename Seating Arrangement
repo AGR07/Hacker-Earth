@@ -1,0 +1,48 @@
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int test_cases;
+	cin >> test_cases;
+	for(int t = 0 ; t < test_cases ; t++)
+	{
+		int cn;
+		cin >> cn;
+		string win = "WS";
+		string mid = "MS";
+		string ais = "AS";
+		int rem = cn % 12;
+		switch(rem)
+		{
+			case 1: cout << cn + 11 <<" "<< win << endl;
+			break;
+			case 2: cout << cn + 9 <<" "<< mid << endl;
+			break;
+			case 3: cout << cn + 7 <<" "<< ais << endl;
+			break;
+			case 4: cout << cn + 5 <<" "<< ais << endl;
+			break;
+			case 5: cout << cn + 3 <<" "<< mid << endl;
+			break;
+			case 6: cout << cn + 1 <<" "<< win << endl;
+			break;
+			case 7: cout << cn - 1 <<" "<< win << endl;
+			break;
+			case 8: cout << cn - 3 <<" "<< mid << endl;
+			break;
+			case 9: cout << cn - 5 <<" "<< ais << endl;
+			break;
+			case 10: cout << cn - 7 <<" "<< ais << endl;
+			break;
+			case 11: cout << cn - 9 <<" "<< mid << endl;
+			break;
+			case 0: cout << cn - 11 <<" "<< win << endl;
+			break;
+		}
+		
+	}	
+}
