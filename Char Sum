@@ -1,0 +1,28 @@
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+int main()
+{
+	char alp[26];
+	string s;
+	cin >> s;
+	int total = 0;
+	int l = s.length();
+	for(int i = 0; i < 26; i++){
+    alp[i] = (char)(97 + i);
+}
+	for(int i = 0; i < l ; i++)
+	{
+		for(int j = 0 ; j < 26 ; j++)
+		{
+			if(s[i] == alp[j])
+			{
+				total = total + (j+1);
+			}
+		}
+	
+	}
+	cout << total<<endl;
+}
