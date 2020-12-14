@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int n;
+	cin >> n;
+	int shr,smin,ehr,emin;
+	for(int i = 0 ; i < n ; i++)
+	{
+		cin >> shr >> smin >> ehr>>emin;
+		if(emin < smin)
+		{
+			cout << ((ehr-1)-shr) << " " << ((emin+60)-smin)<<endl;
+		}
+		else{
+			cout << (ehr-shr)<<" "<<(emin-smin)<<endl;
+		}
+	}
+	return 0;
+	
+}
